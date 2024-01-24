@@ -1,0 +1,60 @@
+:root {
+    --card-height: 65vh;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    box-sizing: border-box;
+    background-image: url("../images/funny.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .intro {
+    
+    font-family: "Titan One", cursive;
+    margin-bottom: 20px;
+  }  
+
+  @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+  a {
+    color: black;
+    font-family: "Titan One", cursive;
+    text-decoration: none;
+  }
+  
+  .user {    
+    font-size: 24px;
+    font-family: "Titan One", cursive;
+  }
+
+  .card {
+    color: navy;
+    font-size: 24px;
+    font-family: "Titan One", cursive;
+    background-color: peachpuff;
+
+  }
+  
+  
